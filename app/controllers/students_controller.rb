@@ -5,9 +5,7 @@ class StudentsController < ApplicationController
   # end
 
   def index
-    @students = Student.all.each do |student|
-      student
-    end
+    @students = Student.all
   end
 
 end
