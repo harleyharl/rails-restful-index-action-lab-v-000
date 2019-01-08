@@ -4,8 +4,10 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
-  def to_s
-    self.first_name.capitalize + " " + self.last_name.capitalize
+  def index
+    @students = Student.each do |student|
+      student.first_name
+    end
   end
 
 end
