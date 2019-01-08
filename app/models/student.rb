@@ -8,4 +8,5 @@ class Student < ActiveRecord::Base
       student.first_name
     end
   end
+  
 end
