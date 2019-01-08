@@ -4,6 +4,8 @@ class Student < ActiveRecord::Base
   end
 
   def index
-    @students = Student.all
+    @students = Student.each do |student|
+      student.to_s
+    end
   end
 end
