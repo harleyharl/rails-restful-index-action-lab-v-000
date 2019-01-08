@@ -5,7 +5,7 @@ class Student < ActiveRecord::Base
 
   def index
     @students = Student.each do |student|
-      student.to_s
+      student.first_name
     end
   end
 end
